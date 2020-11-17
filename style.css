@@ -1,0 +1,147 @@
+/* *{
+  border: red solid 2px;
+} */
+body{
+    margin: 0px;
+}
+
+.container, .logo, .navigation{
+  display:flex; /* Converts all the elements to flex display. It's important to add this property in order to use the flex-box */
+}
+header{
+  background: #2a4658;
+}
+
+.logo{
+  margin-left: 40px;
+  color: white;
+}
+.navigation{
+/* justify-content: flex-end; */
+list-style: none;
+}
+
+.navigation a {
+  text-decoration: none; /* Removes the underline on the anchor tag. Which is also called the text decoration*/
+  display: block; /* If you add border to the element you will see adding this property converts the element to a block. Converts both navigation class and the a tag to block-display */
+  padding: 1em; /* Adds padding arround the elements */
+
+  color: yellow;
+}
+.navigation a:hover {
+  background: red;
+}
+.logo{
+  flex:1; /* increases the width of the element to all the free space available. */
+}
+
+/* For the post section */ 
+#main{
+  background-color: #eceeee;
+}
+#posts{
+  padding-top: 1em;
+  padding-left: 5em;
+  padding-right: 1em;
+}
+
+.post h2{
+  font-size: 2em;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif;
+  padding-right: 6em;
+  text-decoration: none;
+  font-weight: 400;
+  
+}
+
+.post a{
+  text-decoration: none;
+  color: #2a4678;
+}
+
+.post p{
+  color: #5e5e5e;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+}
+
+.para:first-letter {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    float: left;
+    font-size: 3rem;
+    /* line-height: 0.65; */
+    margin-right: 5px;
+}
+
+.readmore{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.readmore a:hover{
+  color: red;
+}
+
+/* After this for the side section */ 
+
+#sidebar{
+  padding-top: 1em;
+  padding-right: 5em;
+}
+
+#sidebar h3{
+  font-size: 1.3em;
+  color: #2a4678;
+}
+
+#sidebar ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+#sidebar ul li a{
+  color: #2a4678;
+  text-decoration: none;
+  
+}
+
+#sidebar p{
+  color: #2a4678;
+  font-size: .8em;
+
+}
+
+.button-blue{
+  margin-top: 1em;
+}
+
+.lm{
+  font-size: 20px;
+  font-weight: 800;
+  color: #2a4678 ;
+  text-decoration: none;
+}
+/* footer section */ 
+.copyright{
+  margin-right: 2em;
+  color: white;
+}
+footer{
+  display: flex;
+  align-items: center;
+  background-color: #2a4658;
+}
+
+footer a{
+  color: white;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+}
+
+footer li{
+  margin-right: 1em;
+  margin-left: 1em; 
+}
